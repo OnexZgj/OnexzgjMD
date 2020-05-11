@@ -412,7 +412,6 @@ public class SensorsDataPrivate {
         }
     }
 
-
     /**
      * View 被点击，自动埋点
      *
