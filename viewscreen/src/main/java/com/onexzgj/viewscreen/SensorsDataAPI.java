@@ -3,6 +3,9 @@ package com.onexzgj.viewscreen;
 import android.app.Application;
 import android.util.Log;
 
+import com.onexzgj.viewscreen.accessibility.AccessibilityDataPrivate;
+import com.onexzgj.viewscreen.transparent.TransparentDataPrivate;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -41,8 +44,11 @@ public class SensorsDataAPI {
         mDeviceInfo = SensorsDataPrivate.getDeviceInfo(application.getApplicationContext());
 
 //        SensorsDataPrivate.registerActivityLifecycleCallbacks(application);
-        WindowCallback.registerActivityLifecycleCallbacks(application);
+//        WindowCallback.registerActivityLifecycleCallbacks(application);
 
+//        AccessibilityDataPrivate.registerActivityLifecycleCallbacks(application);
+
+        TransparentDataPrivate.registerActivityLifecycleCallbacks(application);
     }
 
 

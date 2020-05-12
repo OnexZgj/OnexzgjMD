@@ -21,3 +21,5 @@ window.callback
                     }
                     return targetViews;
                 }
+
+View.AccessibilityDelegate  通过View中的preformClick
